@@ -9,11 +9,10 @@ Generate both (Apk &amp; Bundle) with just click from android studio for (Window
 1. Add this to your build.gradle (app level).    
 ``` groovy
 project.ext {
-    versionCode = 3
-    versionName = "3.2"
+    versionCode = 1
+    versionName = "1.0"
 }
 ```
-
 
 2. Modify your versionCode and versionName in the same file (build.gradle (app level)).    
 ``` groovy
@@ -24,10 +23,11 @@ project.ext {
         //...
     }
 ```
-3. Add this task to your build.gradle (app level).   
+3. Add this task to your build.gradle (app level).    
+
 **Note:**   
-You need to change the output file -> YOUR_OUTPUT_FILE
-For example : I want to generate my files to the desktop, so I have write 
+You need to change the output file -> YOUR_OUTPUT_FILE    
+For example : I want to generate my files to the desktop, so I have write     
 "C:/Users/Shehata/Desktop/
 
 ``` groovy
@@ -95,7 +95,7 @@ task getReleaseApk_Bundle() {
     }
 }
 ```
-So your final build.gradle (app level) will be look like this:
+**So your final build.gradle (app level) will be look like this:**
 ``` groovy
 /** 
 ** Your plugins are placed here
@@ -220,16 +220,18 @@ MyApp.signing.alias=ALIAS_NAME
 ```  
 change ->  YOUR_KEYSTORE_LOCATION, ALIAS_PASS, KEYSTORE_PASS, ALIAS_NAME    
 
-2. Run your task:   
-way number 1:   
-press this play icon to start the task like this..
+--- 
+
+4. Run your task:   
+way number 1 (Easy way):   
+- **Press** this play icon to start the task like this..
 <p align="center">
   <img src="img/no1.png">
 </p>  
 
 OR     
 
-way number 2:   
+way number 2 (Difficult way):   
 A. Click on gradle tab
 <p align="center">
   <img src="img/no2.png">
@@ -243,7 +245,9 @@ B.
   <img src="img/no4.png">
 </p> 
 
-3. Finally the file exploler will be opend for your output file    
+--- 
+
+5. Finally the file exploler will be opend for your output file    
 <p align="center">
   <img src="img/no5.png">
 </p>  
