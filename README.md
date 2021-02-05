@@ -239,8 +239,11 @@ B.
 <p align="center">
   <img src="img/no3.png">
 </p>  
+<p align="center">
+  <img src="img/no4.png">
+</p> 
 
 3. Finally the file exploler will be opend for your output file    
 <p align="center">
-  <img src="img/no4.png">
+  <img src="img/no5.png">
 </p>  
