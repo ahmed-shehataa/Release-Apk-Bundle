@@ -1,5 +1,5 @@
 # :rocket: Release Apk and Bundle:
-Generate both (Apk &amp; Bundle) with just click from android studio for (Windows &amp Linux &amp Mac)
+Generate both (Apk &amp; Bundle) with just click from android studio for (Windows &amp; Linux &amp; Mac)
 
 <p align="center">
   <img src="img/release.png">
