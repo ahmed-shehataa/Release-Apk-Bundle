@@ -1,5 +1,5 @@
 # :rocket: Release Apk and Bundle:
-Generate both (Apk &amp; Bundle) with just click from android studio for (Windows &amp; Linux &amp; Mac)
+Generate both (Apk &amp; Bundle) with just click from android studio for (Windows &amp; Linux &amp; Mac) :scream:
 
 <p align="center">
   <img src="img/release.png">
@@ -247,7 +247,8 @@ B.
 
 --- 
 
-5. Finally the file exploler will be opend for your output file    
+# Final result:
+The file exploler will be opend.
 <p align="center">
   <img src="img/no5.png">
 </p>  
