@@ -1,5 +1,5 @@
 # :rocket: Release Apk and Bundle:
-Generate both (Apk &amp; Bundle) with just click from android studio for (Windows &amp; Linux &amp; Mac) :scream:
+Generate both (Apk &amp; Bundle) with just only one click from android studio for (Windows &amp; Linux &amp; Mac) :scream:
 
 <p align="center">
   <img src="img/release.png">
@@ -24,12 +24,6 @@ project.ext {
     }
 ```
 3. Add this task to your build.gradle (app level).    
-
-**Note:**   
-You need to change the output file -> YOUR_OUTPUT_FILE    
-For example : I want to generate my files to the desktop, so I have write     
-"C:/Users/Shehata/Desktop/
-
 ``` groovy
 task getReleaseApk_Bundle() {
     dependsOn ':app:assembleRelease', ':app:bundleRelease'
@@ -95,15 +89,22 @@ task getReleaseApk_Bundle() {
     }
 }
 ```
+
 **So your final build.gradle (app level) will be look like this:**
+
+**Note:**   
+You need to change the output file -> YOUR_OUTPUT_FILE    
+For example : I want to generate my files to the desktop, so I wrote     
+C:/Users/Shehata/Desktop
+
 ``` groovy
 /** 
 ** Your plugins are placed here
 **/
 
 project.ext {
-    versionCode = 3
-    versionName = "3.2"
+    versionCode = 1
+    versionName = "1.0"
 }
 
 android {
@@ -133,7 +134,6 @@ android {
     buildTypes {
         release {
             signingConfig signingConfigs.release
-            versionNameSuffix ".release"
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
@@ -210,6 +210,7 @@ task getReleaseApk_Bundle(type: 'other') {
     }
 }
 ```
+
 **Important**   
 Your gradle.properties file should contains this signing config
 ``` groovy
